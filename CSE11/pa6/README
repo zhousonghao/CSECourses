@@ -1,0 +1,82 @@
+/* 
+ * Name: Songhao Zhou 
+ * Login: cs11wJC
+ * Date: 2/20/2014
+ * File: README
+ * This file explains to user what programs do in high level
+ */ 
+Program Description:
+  ReverseRecurse.java: This program is designed to take user 
+specified array and print it out in a reversed order with 2 
+ways to reverse that order. When the program starts, it will 
+print out the line says “Maximum number of integers you wish to enter?”,
+at which point the program expects user to enter an integer to specify the
+size of the array. And the program will keep asking for a valid integer in
+case user has typed in a negative or 0, the program will notice user “You 
+must enter a value > 0; Try again. ”. After program has received a valid 
+size of the array, it will then ask user to keep specifying the elements in
+the array, by printing out “Enter up to x integers:”, where x is the size of
+the array that has declared. At this moment, user can type as many integers 
+as user want. Program will automatically find the correct size of the elements
+and then print them out in order (original array, reverse1, reverse1-avian; 
+original,reverse2,reverse2-again). When user has entered integers are equal or
+exceed the size that user has mentioned, “enter”key is sufficient. Otherwise, 
+if the number of integers user has entered is less than the size user has 
+specified and end the typing by EOF,which is “CTRL+D”, then the program will 
+automatically creating an new array which takes place of original size of the 
+array that sure has initially declared and does the same thing afterwards.
+
+  Slots.java & SlotWheel.java: These 2 files are essentially one program with 
+the Slots.java as controller and SlotWheel.java as the construct animation. 
+When user started the program, there will be the title on the top of the pop-up
+window, says"SUN VAS GODAS”. Under that header, there will be the textfield
+indicates the number of spins number of wins so far. And there will be a blank
+textfield for user to type in the amount to deposit, a “Bank” to keep track
+the amount of money user has left, and one jumbo box which can pick how much
+user wants to gamble. Along with those, there will also be 3 wheels in the
+middle of the canvas and a click button says “Click to Spin”. When user has
+clicked the spin button, three slot wheels will begin to spin and eventually
+stop in a fashion of the first one stops first, second one stops second, third
+one stops last. Once all three wheels has stopped, the program will check
+whether 3 wheels are identical. If they are, then a congrats picture will show
+up and the counter of the wins will increment by one. Also, the bank will 
+increment by the amount of the money user has selected times the payoff ratio
+which is 15 in our case.
+
+
+
+Vim Questions: 
+1. In vim/gvim, what commands will indent N consecutive lines 
+   (starting from the cursor line) by one level where the indent level is 
+   defined to be two spaces? This will take two vim commands: one to set 
+   the number of spaces to indent with each indent level (default is 8), 
+   and one to actually indent N consecutive lines. Likewise what command 
+   will shift N lines left (de-indent N lines)? 
+
+   In command mode, type ":set shiftwidth=2"
+   then type ": > N" shift right
+   or ": < N" to shift left
+   N is the number of line you want to shift
+  
+2. In vim/gvim, what command will indent an entire curly-bracket block one
+   level, while the cursor is currently on either the open or close curly
+   bracket of the block? Likewise what command will shift an entire 
+   curly-bracket block one level left (de-indent block)? 
+  
+   In command mode, move the cursor to the bracket and then type ">i{" to
+   indent to the right; type ">i{" to indent to left
+
+3. How do you open a new line below and insert 
+   (one keyboard key for both steps)? 
+   In command mode, press "o"
+ 
+Unix Question: 
+4. On the Unix command line, how can you capture (redirect) the program's
+   output into a file named "output"? 
+   In terminal, append " >output.txt" after "javac XXX.java" 
+ 
+Java Question: 
+5. How can you create an array of ints in Java and initialize it with the 
+   values of all single digit odd positive numbers (between 0-9), all in one 
+   step/line?
+   int[] anArray = {1,3,5,7,9};

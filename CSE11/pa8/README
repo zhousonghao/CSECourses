@@ -1,0 +1,51 @@
+/* 
+ * Name: Songhao Zhou 
+ * Login: cs11wJC
+ * Date: 3/6/2014
+ * File: README
+ * This file explains to user what programs do in high level
+ */ 
+
+Program Description:
+	CS11Turtle_Threaded.java: This program is designed to write out own ID. 
+When user run the program, there will be 12 turtles on the screen initially.
+And then all the turtles will move at the same time, each drawing its own
+word, to complete my cse11 course id which CSE11WJC WINTER 2014
+
+	Rational.java: This program is designed to create a rational number and do 
+dozen of tests that check its functionaliy. When user complie and run this 
+program, there will be a test result shown at the end. (40/40 yeh :) )
+
+
+
+Vim Questions: 
+ 1. How do you jump to a certain line number in your code with a single command 		in vim? For example, how do you jump directly to line 20? 
+		
+		Ans: In the command mode, type in 20G.
+
+ 2. What command sets auto-indentation in vim? What command turns off (unsets) a		uto-indentation in vim? 
+
+		Ans: In the command mode, type in ":set autoindent" (turn it on);
+				 ":set noautoindent" to turn it off.
+
+ 3. What is the command to undo changes in vim? 
+
+		Ans: u
+
+ 4. In vim, in command mode, how do you move forward one word in a line of code?		Move back one word? 
+ 
+		Ans: 1w ; 1b
+
+ Unix Questions: 
+ 5. How can you remove all .class files in a Unix directory with a single 
+		command? 
+
+		Ans: rm *.class
+
+ 6. How do you remove a Unix directory? 
+
+		Ans: rmdir
+
+ 7. What is the command to clear a Unix terminal screen?
+
+		Ans: clear

@@ -1,0 +1,79 @@
+Program Description:
+1.AnimalSpeak: This program is designed to let user pick the correct animal which  corresponding to the sound that it make. When the user started the program
+  there will be nine animals, with size 100*100,appear on the screen. At
+  the bottom of the appletview there's a text says "which animal says" + the 
+  sound that typical animal make and it will be picked randomly. There are
+  couple different scenarios. If user has the correct hit of the image, then
+  the parameter of that very image will be highlighted as green and there
+  is a green text, saying "CORRECT!-- Click mouse to restart", appearabove the 
+  question prompt.And if user click agian, then all the colored item will go
+  away except the question propmt which will be renewed to a random pick of
+  animal's sound. But if user has a wrong clik, then that very animal will be
+  highlighted as red and a red text saying "WRONG - Try Again!" will appear
+  above the question prompt.At this point, if user hit a coorect image then 
+  the scenario under correct click will show. At any moment, a click on the
+  blank of the canvas will be result in all colored items gone but only 
+  renewed question prompt will show.
+
+2.Memory: This program is designed to test user's memory by only allowing user
+  to see 2 picture of animals after 2 clicks by the user but hide them if user
+  has two NOT match at 3rd click but stay there if they do match. When user
+  first started the program, there will be 18 framed rectangles(the rectangles
+  only with parameter in the color black). But if user click on any one of
+  those 18 tiles, then the clicked tile will show the animal that is underneeth
+  it.At this point, if user click anywhere besides the rest of 17 tiles, the 
+  program will do nothing. At second click (click on the rest of 17 tiles), 
+  will results in reveal the animel underneeth that particalar tile. Then,
+  those 2 animals will be highlighted as green around their 2-pixel parameter
+  if two revealed animal match, at this momentm the program will do nothing if 
+  user click anywhere besides the rest 16 tiles; But highlighted as red if they   do NOT match, at this moment, when user click the third time and click on
+  one of those red highlighted animals then the lastest clicked one will 
+  remian show but with highlight gone and the earlist click aniaml will
+  disappear. But if user click on the hidden tiles, then that tile will reveal
+  the animal underneeth it just like it did for the first click but with two
+  red highlighted animals disappear. And this process will repeat itself until
+  user has matched all 18 animals. One thing to notice, when there are two
+  NOT match animals are present, a click on the blank of the canvas wiii let
+  those two highlighted animals and their highlights disappear.	
+
+Short Response:
+
+sim related questions: 
+1. Q: In vim, how do you move the cursor to the end of a line with
+      a single command? To the beginning of a line with a single command?
+   A: In order to move to the end of the line : 
+      First press "Esc" to enter the command mode and then type "$" sign by 
+      pressing "shift + 4".
+      In order to move to the begin of the line : First press "Esc" to enter
+      the command mode and then type "0" sign by pressing "0".
+
+2. Q: How do you highlight/select a line in vim? 
+   A: Press "control + v" then move the arrow button to highlight the line. 
+
+Java related questions:
+3. Q: What does the keyword static mean in regards to variables? 
+   A: The static keyword associated with variables in java specifies
+      that the entity belongs to the class and not any object instance of
+      the same.
+
+4. Q:  What does the keyword static mean in regards to methods?
+        Provide an example use of a static method.
+   A: The static keyword associated with methods in java specifies that the
+      entity belongs to the class and not any object instance of the same.
+      example : public static void main(String[] args){
+ 		   ...
+		}
+
+5. Q: What is overriding? Give an example from a previous/current assignment.
+   A: The ability of a subclass to override a method allows a class to inherit
+      from a superclass whose behavior is "close enough" and then to modify
+      behavior as needed. The overriding method has the same name, number and 
+      type of parameters, and return type as the method that it overrides.
+      example: 	@Override 
+ 		public abstract boolean equals(Object o)
+
+Unix related questions: 
+6. Q: Using the cut command, how do you extract out only the columns 5
+      through 13 in a file named foo? 
+   A: cut -c 5-13 foo
+

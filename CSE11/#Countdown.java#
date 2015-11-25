@@ -1,0 +1,79 @@
+/*
+  Name: Hongyuan Fu
+  UCSD Email: 
+
+
+
+ /*
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+import objectdraw.*;
+import java.awt.*;
+
+public class Countdown extends WindowController
+{
+ private static final int CDIAMETER = 10;
+ private static final int BLUE = 255;
+  
+   public void begin() 
+ {
+   private double x = 0.0, y = 0.0, 
+   FiledOval circle;
+   
+   x = (clockWidth - CDIAMETER) / 2.0;
+   y = (clockHeight - CDIAMETER) / 2.0;
+   circle = new FiledOval(x,y,CDIAMETER,CDIAMETER, canvas);
+   circle.setColor(new Color(0,0,BLUE));
+   
+   AngLine secondHand;
+   private double radianAngle = 0.0, length; 
+   
+   x = clockWidth / 2.0;
+   y = clockHeight / 2.0;
+   length = CDIAMETER + 15.0;
+   radianAngle = (Math.PI / 2.0) + seconds * ((2 * Math.PI) / 60)
+   secondHand = new AngLine(x,y,radianAngle, canvas);
+     
+   do 
+   {
+     try { TimeUnit.MILLISECONDS.sleep(T);}
+     catch (InterruptedException e){};
+     radianAngle = radianAngle - ((2 * Math.PI) / 60);
+     secondHand.hide();
+     secondHand = new AngLine(x,y,radianAngle, canvas);
+     
+   } while(radianAngle > (Math.PI / 2));
+     
+ }
+   public void onMouseClick(Location point)
+ {
+     System.exit(0);
+ }
+  
+  
+  public static void main(String[] args) {
+  Scanner scnr = new Scanner(System.in);
+
+  static int clockWidth, clockHeight, seconds;
+  System.out.print("Enter Clock Width in Pixels : ");
+  clockWidth = scnr.nextInt();
+  System.out.print("Enter Clock Height in Pixels : ");
+  clockHeight = scnr.nextInt();
+  System.out.print("Enter Countdown in Seconds : ");
+  seconds = scnr.nextInt();
+
+  if (clockWidth > 0 && clockHeight > 0 && seconds > 0)
+  {
+    new Countdown().startController(clockWidth,clockHeight);
+  }
+  else 
+  {
+    System.out.println("BAD INPUT");
+    System.exit(0);
+  }
+  
+  
+  return;
+ }
+
+}

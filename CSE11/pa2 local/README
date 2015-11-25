@@ -1,0 +1,39 @@
+Program Description:
+
+1)TwoLargesr Program:
+	
+This program is designed to print out the two largest integers among all the input integers by the user and the program will terminate when user put EOF(control+d on Mac) as an input. There's are severalcases considered. In the first case when user put nothing but EOF the program will pop out the message "No numbers entered“; In the second case, when user enters only one interger then hit EOF program will then print out the messgae "Largest distinct number entered was ..." (... is the largest number); In the third case, when user enters 2 or more integers (at least two non-identical integers) program will print out the message "Largest distinct number entered was ..." and "Second largest distinct number entered was ..." (... are largest numeber and second largest number respectively). But if the inputs are identical the program will print only print out "Largest distinct number entered was ..." (... is the largest number).
+
+
+
+2)Mickey
+
+This program is designed to draw a Mickey silhouette and enables user to drag the Mcikey around while change its orientation and color at mean time. When the program is started there will be three instructions shown at the top of pop out window, says, "Click to display a Mickey silhouete centered at the mouse click.","Mouse press in any part of the image and drag to move image around." and "Mouse click in any part of the image with a mouse press for more than 0.5 seconds to turn image.". First step of creating a Mickey is to click anywhere on the canvas and the intructions will disappear at mean time. At this momoment, there won't be any actions on the Mickey if user clicks anywhere anytimes on the canvas (includes Mickey itself). But if user drag the Mickey the silhouette will move accordingly.In order to flip Mickey, user needs to press on the Mickey for no less than half of a second. Then Mickey will turn 90 degrees clockwise and changes its color repectively (balck-facing up, red-facing right, green-facing down, blue-facing left). At any orientation of the Mickey, user is able to drag the Mickey around. When user move the mouse out of the canvas (onMouseExit), the Mickey will be hidden and left blank on the canvas.(nothing shown on the terminal). Once user move the mouse back into the canvas (onMouseEnter), that 3 instructions was shown earlier will appear agian. (nothing shown on the terminal)
+
+
+
+Short Response:
+
+1)Q: what do the foloowing commands do? 
+     mv apple.java orange.java
+  A: renames 'apple' to 'orange'.
+
+2)Q: cp../../fileABC.java
+  A: copy over a fileABC java file from the directory ...
+
+3)Q: What happens when you select text and the middle click in vim when in insert mode?
+  A: It will generate the code " System.out.println("");"
+
+4)Q: What are three keyboard commands to enter insert mode in vim?
+  A: First keyboard command to enter insert mode in vim is pressing "a";  (Append text after the cursor [count] times.)
+     Second keyboard command to enter insert mode in vim is pressing "i"; (Insert text before the cursor [count] times.)
+     Third keyboard command to enter insert mode in vim is pressing "o";  (Begin a new line below the cursor and insert text, repeat [count] times.)
+
+5)Q: How do you switch from insert mode to command mode in vim?
+  A: Press "Esc" on the keyboard.
+
+6)Q: What happens when you type ":split" in command mode in vim?
+  A: The vim turns into split window.
+
+7)Q: What is a method?
+  A: A method is that a piece of code that could perform some operations, then return something back to whatever happened to “call” the method. (As known as function)

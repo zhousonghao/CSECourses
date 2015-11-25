@@ -1,0 +1,107 @@
+/* 
+ * Name: Songhao Zhou 
+ * Login: cs11wJC
+ * Date: 2/20/2014
+ * File: README
+ * This file explains to user what programs do in details
+ */ 
+Program Description:
+  This program is designed to personate 3 different kinds of critters,
+Chaser, Runner and Random. When the programmed is started, there will be 
+6 buttons and two labels on the screen, the current status label, start 
+button, stop button, clear button at the north of the canvas and
+instruction label, Chaer, Runner, Random button. The current status label
+will indicates user the current status and changes acoordingly.If the 
+simulation is in the stopped state, the status should read “Simulation is 
+stopped.” If the simulation is in the started state, but there are less 
+than 2 Critters on the canvas, the status should read “Please add two or 
+more critters.” If the simulation is in the started state, and there are 
+2 or more Critters on the canvas, the status should read "Simulation is 
+running." When user clicked the Chaser button, the instruction label will
+say "Click on the canvas to create a Chaser", and ig user do so, a cyan 
+color filledrec will appear at the center of the click of mouse. When user
+clicked the Runner button, the instruction label will say "Click on the 
+canvas to create a Runner", and ig user do so, a magenta color 
+filledoval willappear at the center of the click of mouse. When user
+clicked the Runner button, the instruction label will say "Click on the 
+canvas to create a Runner", and ig user do so, a magenta color 
+filledoval will appear at the center of the click of mouse. When user
+clicked the Random button, the instruction label will say "Click on the 
+canvas to create a Random", and ig user do so, a orange color 
+cross will appear at the center of the click of mouse. When two chasers
+are present, they won't chase each other; however, if either a runner or
+a random is present then the chaser will chase the closest one as long as
+the other is not a chaser. As for a runner, it will always run away from
+the nearest critter no matter what it is. But for the random, it will acts
+on itsself (not affect by any other critter at present). All critters will
+stay in the canvas, once the runner or random hits the boundary it will
+then randomly switch to a location where within the canvas. If stop button
+is clicked during the action , all critters will stop moving. Otherwise,
+if start button is clicked then all the critters should be in action. 
+Once, the clear button is clicked then all the criiters on the canvas will
+be removed.
+
+Java Questions: 
+1. A high school student is trying to write a Java program that will draw 
+   different shapes and in different possible colors. To do this, she 
+   has written just one Java class called ShapeDrawer, which contains all 
+   the necessary methods like drawRedCircle(), drawBlueCircle(), 
+   drawYellowSquare(), drawGreenSqare(), and so on. Using object-oriented 
+   terminology, describe how you can help the student improve her design. 
+
+   I would suggest to create methods that responsible for setting
+   different shapes colors seperately instead of cramming them into one
+   big chunk. In this way, it will cut down the number of method.
+
+   Another suggestion would be to create two classes, 
+   one that to extends windowcontroller which manipulate all the creations
+   of new object, while the other one should handle each object's behavior.
+   The benefit of doing so is easier to debug. 
+
+2. List at least two ways in which Java Interfaces and Java abstract 
+   classes are different. 
+
+   @1 : the inteface only has the method header but there's no body.
+        But abstract class can has both the body and header
+
+   @2 : abstract classes is a super class, thus can be extended
+        but inteference is not, can only be implemented.
+
+3. List at least two ways in which Java Interfaces and Java abstract 
+   classes are alike. 
+ 
+   @1 : Both have method headers
+ 
+   @2 : methods in both can be inherited
+
+Vim Questions: 
+4. How can you run gvim through the command line to open all Java source 
+   code files in the current directory, each file in its own tab? 
+ 
+   type in "vim -p *.java"
+
+Unix Questions: 
+5. Suppose you are currently inside a directory and in there you want to 
+   make a new directory called fooDir. And inside fooDir, you want another
+   directory called barDir. Using only a single mkdir command, how can you
+   create a directory called fooDir with a directory called barDir inside 
+   it?
+ 
+   type in "mkdir -p /fooDir/barDir/"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+/* 
+ * Name: Songhao Zhou 
+ * Login: cs11wJC
+ * Date: 3/13/2014
+ * File: README
+ * This file explains to user what programs do in details
+ */ 
+Program Description:
+  This program is designed to provide the constructor for 8 different shapes
+in which contains shape.java and Arectrangle.java that function as a parent of 
+all the other shapes excludes Point which is by itself in the hierachy. After 
+providing all the necessary methods like getters,setters, constructors... we
+have 2 test files names TestMickey and TestHouseWithDelays.java to test all the
+methods that we've written. In order to run the TestMickey, we need compile all 
+the other shaped by using command "javac -cp ./objectdraw.jar:. *.java" and 
+then run the html using "appletviewer TestMickey.html" in the terminal. When
+the applet has started, we will see a black Mickey with all its three circle's
+cneter point printed out on the canvas. While we run the TestHouseWithDelays,
+we use the same code "javac -cp ./objectdraw.jar:. *.java" but use " 
+TestHouseWithDelays.html" to start the appletviewer instead. In this case,
+the program will start to draw a house, start with house body, then chimney,
+then roof frame, left window, 1st window pane, 2nd window pane, right window,
+the door, door knob and finally filling the roof,by using all the shapes that
+has implemented so far. At the mean time, all the kinds of shape with its 
+position value will get printed out underneath the house that is drawn. 
+
+
+
+Short Response ( 5 points ) : 
+1. How would you test whether the copy constructors in the shape classes are 
+   doing a deep copy instead of a shallow copy? 
+
+   For example, given: 
+   CSE11_Line l1 = new CSE11_Line(); 
+   CSE11_Line l2 = new CSE11_Line(l1); 
+   How would you test CSE11_Line’s copy constructor is doing a deep copy? 
+
+   Ans: We can test whether this is a deep copy by comparing l2's start and end
+        points are the same reference as l1's start and end points by using 
+        "==" sign.
+        Example: if(((CSE11_Line)l1).getStart() == ((CSE11_Line)l2).getStart()
+                 ||((CSE11_Line)l1).getEnd() == ((CSE11_Line)l2).getEnd())  
+                  {
+                    String s = "\nYou implemented the CSE11_Line ctor with a 
+                                  shallow copy.\n"  + "Should be deep copy!\n";
+
+                    throw new IllegalStateException( s );
+                  }
+
+ 
+2. On a similar note, how would you test the equals() methods in each of
+   the shape classes are doing deep comparisons instead of shallow reference 
+   checks?  
+
+   Ans: In order to check whether the shape has operated a deep copy, we can
+        check all the contents that contain in that particular shape class.
+        Example: say if the shape is a square
+
+        square s1 = new square(); 
+        square s2 = new square(s1); 
+
+        if(((square)s1).getUpperLeft() == ((square)s2).getUpperLeft()
+                 ||((square)s1).getSide() == ((square)s2).getSide())  
+                  {
+                    String s = "\nYou implemented the square ctor with a 
+                                  shallow copy.\n"  + "Should be deep copy!\n";
+
+                    throw new IllegalStateException( s );
+                  }
+
+
+

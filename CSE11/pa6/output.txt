@@ -1,0 +1,22 @@
+Maximum number of integers you wish to enter? 
+Enter up to 5 integers 
+
+The original array:
+Empty Array
+The array reversed (manipulating array directly):
+Empty Array
+The array reversed again (manipulating array directly)
+(should be back in original order):
+Empty Array
+The copy of the original array:
+Empty Array
+The array reversed (reversed array returned vs. direct manipulation):
+Empty Array
+The original array showing original NOT modified:
+Empty Array
+
+Testing reverse method (direct manipulation) with null array input:
+  SUCCESS: No NullPointerException thrown.
+
+Testing reverse method (returned reversed array) with null array input:
+  SUCCESS: No NullPointerException thrown.

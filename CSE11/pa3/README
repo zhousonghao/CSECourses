@@ -1,0 +1,56 @@
+Program Description: 
+	In general, this program let user create PacMen when the mosue is clicked and those PacMen will increasing, decreaisng, spinning, changing the color based on which quadrant PacMan is in constantly. When user start this program, 2 lines, vertical and horizontal one, will appear at the center of the window that pop up and devide the pop up window into 4 quadrants.Then, user is able to drag the vertical or horizontal or both of the lines around. In order to do that, press the mouse and move the mouse (with no release of the mouse). However, there is a bound that the program has predetermined which is 5 pixels at top, right, bottom and left of the pop-up wondow. After playing around with the lines, user is also able to change the size of pop-up window by move the mouse to the edge of the pop-up window and change the size of it by draging when the mouse changed from a arrow to dragging symbol (varies between the systems). During the change of window, the program will keep the proprtion of the quadrants that has been devided by vertical and horizontal lines the same.So no matter how big or small the canvas has changed to, the proprtional of 4 quadrants will stay the same. After done playing around with the lines and window size, user can click the mouse (press the mouse and release without move the mouse) to create the PacMan. Depending on which quadrant that user has create the PacMan at, the PacMan will set to its default color (upper left-cyan; upper right - magenta; lower left - yellow, lower right - black).Once the PacMan has created, it will start increasing its size and when it reached twice of its original size it will start decreaising to its half original size and increasing again. During this resizing process, PacMan will also spinning by itself and they can'be moved by any method. At this moment, if user changes the postion of vertical and horizontal lines (hence the proportion of the quadrants), PacMan will stay at the same location where they are created and keep resizing and spinning. However, they will change their color depending on which quadrant that they are currently been located in. They will keep resizing, spinning, changing color constantly whenver user change the proportion of the quadrants by moving the lines or changing the size of window. if user changed the size of the canvas to a point where user can't see the pacman anymore, pacman will still be there do its trick and user can see it again when user enlarge the window.
+
+
+
+Short Response:
+
+1. Q:From your current directory how do you copy over a java file named fubar from a folder
+     three directories above? Write the full command required to perform this action. 
+   A:cp /dir1/dir2/dir3/ fubar.java .
+
+2. Q:What does the command "man cat" do (with no quotes)?
+   A:The Single Unix Specification specifies that when the "cat" program is given files in a sequence as arguments, it will output their conten	    ts to the standard output in the same sequence. It mandates the support of one option flag, u (unbuffered), by which each byte is written      to standard output without buffering as it is read. Many operating systems do this by default and ignore the flag.
+     If one of the input filenames is specified as a single hyphen (-), then cat reads from standard input at that point in the sequence. If no     files are specified, cat reads from standard input only.
+
+
+     We have those pop-up message when we entered "man cat"
+
+     CAT(1)                           User Commands                          CAT(1)
+
+     NAME
+       cat - concatenate files and print on the standard output
+
+     SYNOPSIS
+       cat [OPTION]... [FILE]...
+
+     DESCRIPTION
+       Concatenate FILE(s), or standard input, to standard output.
+
+       -A, --show-all
+              equivalent to -vET
+
+       -b, --number-nonblank
+              number nonempty output lines
+
+       -e     equivalent to -vE
+
+       -E, --show-ends
+              display $ at end of each line
+
+       -n, --number
+
+3. Q:From your current directory, how do you remove all html files in your home directory?
+   A:rm ~/ *.html
+
+4. Q:What is the difference between :q and :q! when using the commands to close a vim file?
+   A:":q" just means Quit ; However, ":q!" means Quit without the sanity checks (ie. unsaved buffers)
+
+5. Q:What does the command "G" do (with no quotes)?
+   A:After we typed command "G", VIM jumps to the bottom of the whole class (one line below where the last "}" for the class)
+
+6. Q:Name 2 ways to easily spot a constructor signature from a normal method signature.
+   A:1st, Constructors have the same name as their class; 2nd, onstructor names are usually nouns because class names are usually nouns
+
+7. Q:What is overloading?
+   A:Overloading means when we are about to define two or more methods within the same class that share the same name, as long as their paramet     er declarations are different.

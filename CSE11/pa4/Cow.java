@@ -1,0 +1,175 @@
+/* 
+ * Name: Songhao Zhou
+ * Login: CS11WJC
+ * Date: 2/4/2014 
+ * File: Cow.java 
+ * Purpose: Cow.java is the class that define for contruction of visible
+ * image of Cow and all the methods that declared in the interfaces
+ */ 
+import objectdraw.*;
+import java.awt.*;
+
+/* 
+ * Name: Cow
+ * Purpose: In Cow class. In this constructor,
+ * the program creates a visible image Cow and 2 framed rec that 
+ * surround the Cow visible image and provides all the methods that
+ * are declared in the interfacesThis is the constructor for the 
+ */
+public class Cow implements AnimalCard 
+{ 
+private static String COW_SPEAK = "Moo";	
+private VisibleImage cow;
+private FramedRect  cow_border1,cow_border2 ; 
+private static final int FRAMED_REC_WIDTH = 99;
+private static final int FRAMED_REC_HEIGHT = 99;
+private static final int BORDER_OFFSET = 1;
+private static final int FRAME_OFFSET = 2;
+
+/* 
+ * Name: Cow
+ * Purpose: This is the constructor for the Cow class. In this constructor,
+ * the program creates a visible image Cow and 2 framed rec that 
+ * surround the Cow visible image
+ * Parameters: Image pic, Location origin , DrawingCanvas canvas
+ * Return: void
+ */
+public Cow(Image pic, Location origin , DrawingCanvas canvas) {
+
+   //create the cow visible image	
+   cow = new VisibleImage (pic , origin.getX(), origin.getY(), canvas);
+
+   //create 2 framed rects
+   cow_border1 = new FramedRect ( origin.getX(), origin.getY(),
+			 FRAMED_REC_WIDTH, FRAMED_REC_HEIGHT, canvas);
+
+   cow_border2 = new FramedRect ( origin.getX()+BORDER_OFFSET, 
+		  origin.getY()+BORDER_OFFSET, FRAMED_REC_WIDTH-FRAME_OFFSET,
+				 FRAMED_REC_HEIGHT-FRAME_OFFSET, canvas);
+
+} // end of constructor
+
+
+
+/* 
+ * Name: contains
+ * Purpose: This method is to check if the formal parameter that passed from 
+ * the controller is contained in the visibleimage and it will return
+ * a boolean value
+ * Parameters: Location pt 
+ * Return: caonima.contains(pt)
+ */
+public boolean contains(Location pt){
+	
+	return cow.contains(pt);
+
+}
+
+/* 
+ * Name: speak
+ * Purpose: This method is for return what sound current animal makes while
+ * controller called this method
+ * Parameters: void
+ * Return: CAONIMA_SPEAK, a string
+ */
+public String speak(){
+
+	return COW_SPEAK;
+
+}
+
+/* 
+ * Name: hideHighlight
+ * Purpose: This method is for hide 2 framed rects' highlight that created 
+ * along with the animal visibleimage
+ * Parameters: none
+ * Return: void
+ */
+public void hideHighlight(){
+
+	cow_border1.hide();
+	cow_border2.hide();
+
+}
+
+/* 
+ * Name: showHighlight
+ * Purpose: This method is to set the 2 framed rects' color and make them 
+ * visible to the user when this method is called from the controller
+ * Parameters: Color color 
+ * Return: void
+ */
+public void showHighlight( Color color ){
+
+	cow_border1.setColor( color);
+	cow_border2.setColor( color);
+
+	cow_border1.show();
+	cow_border2.show();
+	
+}
+
+/* 
+ * Name: show
+ * Purpose: This method is for show 2 framed rects that created along with the 
+ * animal visibleimage
+ * Parameters: none
+ * Return: void
+ */
+public void show(){
+
+	cow.show();
+}
+
+/* 
+ * Name: hide
+ * Purpose: This method is for hide 2 framed rects that created along with the 
+ * animal visibleimage
+ * Parameters: none
+ * Return: void
+ */
+public void hide(){
+
+	cow.hide();	
+}
+
+/* 
+ * Name: equals
+ * Purpose: This method is make to check if two object belong to the same class
+ * and return a boolean value when called from controller
+ * Parameters: Object o
+ * Return:  (this.getClass()) .equals( o.getClass()) , a boolean value
+ */
+@Override
+public boolean equals(Object o){
+
+	return ( (this.getClass()) .equals( o.getClass()) );	
+}
+
+/* 
+ * Name: getHighlightColor
+ * Purpose: This method is to get the 2 framed rects' color and return their 
+ * color to the controller when this method is called from the controller
+ * Parameters: none
+ * Return: caonima_border1.getColor(), a color
+ */
+public Color getHighlightColor(){
+
+	return cow_border1.getColor();
+
+}
+
+/* 
+ * Name: isHidden
+ * Purpose: This method is to determien whether the visible images is hiden
+ * then it will return boolean value
+ * Parameters: none
+ * Return: caonima.isHidden(), a boolean variable
+ */
+public boolean isHidden(){
+
+	return cow.isHidden();
+
+}
+
+} // end of class

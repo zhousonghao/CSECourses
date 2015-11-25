@@ -1,0 +1,98 @@
+Program Description: 
+
+  PART 1:In general, this program let user create PacMen when the mosue is 
+clicked and those PacMen will increasing, decreaisng, spinning, 
+changing the color based on which quadrant PacMan is in constantly. 
+When user start this program, 2 lines, vertical and horizontal one, 
+will appear at the center of the window that pop up and devide the 
+pop up window into 4 quadrants.Then, user is able to drag the vertical 
+or horizontal or both of the lines around. In order to do that, press 
+the mouse and move the mouse (with no release of the mouse). However,
+there is a bound that the program has predetermined which is 5 pixels at top,
+right, bottom and left of the pop-up wondow. After playing around with the 
+lines, user is also able to change the size of pop-up window by move the
+mouse to the edge of the pop-up window and change the size of it by draging
+when the mouse changed from a arrow to dragging symbol (varies between the 
+systems).During the change of window, the program will keep the proprtion of
+the quadrants that has been devided by vertical and horizontal lines the same.
+So no matter how big or small the canvas has changed to, the proprtional of 
+4 quadrants will stay the same. After done playing around with the lines and
+window size, user can click the mouse (press the mouse and release without move
+the mouse) to create the PacMan. Depending on which quadrant that user has
+create the PacMan at, the PacMan will set to its default color (upper 
+left-cyan; upper right - magenta; lower left - yellow, lower right - black).
+Once the PacMan has created, it will start increasing its size and when it
+reached twice of its original size it will start decreaising to its half 
+original size and increasing again.During this resizing process, PacMan will
+also spinning by itself and they can'be moved by any method.
+At this moment, if user changes the postion of vertical and horizontal lines 
+(hence the proportion of the quadrants), PacMan will stay at the same location
+where they are created andkeep resizing and spinning.However, they will change
+their color depending on which quadrant that they are currently been located in.
+They will keep resizing, spinning, changing color constantly whenver user
+changethe proportion of the quadrants by moving the lines or changing the size
+of window. if user changed the size of the canvas to a point where user can't
+see the pacman anymore, pacman will still be there do its trick and user can
+see it again when user enlarge the window.
+
+  PART 2: At this time, we've added buttons, sliders to let user have more
+interactions with the program. When user first started the program, there will
+be a text message says"Resizable PacMan Controls" on the top of the canvas
+along with four buttons, "start, stop, clear all and switch spin" beneath the 
+text.Also, there is a slider bar at the bottom of the canvas along with a label
+indicates the current speed. When user creates the Pacmans by clicking on the 
+canvas and then user click stop, then all pacmans, no matter how many are there
+will stop all together.ANd they will remain freeze until user click start. At 
+the mean time, if user created more pacmans those pacmans will remain freeze.
+Pacmans will resizing and spinning whne it is created, and its default spining
+direction is clockwise. When pacmans are not in freeze situation and user 
+clicked once "switch spin" button, all pacmans will spinning counter-clockwise
+and when user clicked it second time, it will spnning back into clockwise
+fashion.For instance, pacman will spinning clockwise if user click the switch
+spin button even number times; and pacman will spinning counter clockwise 
+if user clicked switch spin button odd number of times. User can also change 
+the speed of Pacman spinning by sliding the slidbar at the bottom of the canvas
+the higher the speed indicates the faster the pacman will spin. User can also
+drag pacman around if user press on one of the pacmans and drag it; it is also
+possible ofr user to drag multiple pacmans and lines if they all overlaps each
+other.However, just as the line boundaries that described in PART 1 Pacmans can
+not exceed that boundary neither.One more thing worth to mention, pacman is 
+constantly changing its color based on which quadrant it is in.
+
+
+
+Short Response:
+
+1. Q:Using vim/gvim, how can you open a file from the Linux command line
+     so that you are taken directly to a specified line in the file?  
+   A:vim +/LineNumberHere fileName
+     ex:$ vim +546 functions
+    
+2. Q:How do you turn off special coloring of keywords and syntax in vim
+     (this is most evident in gvim)? For example, by default your gvim colors 
+     comments differently from other parts of code (comments are colored blue
+     by default). If you turn off syntax coloring then all the code in your
+     file will be of same color, black by default. How do you turn the coloring
+     back on?
+   A:First go to command mode, to turn coloring off type in ":syntax off"
+     Type ":syntax on" to turn it back on.
+   
+3. Q:What is the command that you type in to view more information on how to
+     use vim/gvim? The specific command that we¿re looking for is the one you 
+     type in command mode in an open vim/gvim file, not on the terminal.
+     Typing the command will bring up a help manual for vim.
+   A:type ":h user-manual" in the command mode
+
+4. Q:What run time structure holds the local variables and formal parameters 
+     with each method invocation?    
+   A:The "call stack" .
+
+5. Q:What are the only things that can be declared in a Java interface?
+     Be specific with full access modifiers and keywords. 
+   A:only methods and constants can be declared.
+     ex:public interface Highlightable 
+     { 
+     public void showHighlight( Color color ); 
+     public void hideHighlight(); 
+     public Color getHighlightColor(); 
+     }
